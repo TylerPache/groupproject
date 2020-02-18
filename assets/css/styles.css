@@ -1,0 +1,277 @@
+/*editted by Michael Lapa*/
+
+
+/*this media query prevents the features of mobile on desktop view*/
+@media only screen and (min-width: 721px) {
+    #myNavMobile {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .overlay-content {
+        display: none;
+    }
+
+    .overlay a {
+        display: none;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        display: none;
+    }
+
+    .overlay .closebtn {
+        display: none;
+    }
+
+    .overlay .closebtn {
+        display: none;
+    }
+
+    .closebtn {
+        display: none;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+
+    #menuIcon:hover {
+        display: none;
+    }
+
+
+}
+
+/*general styles of body*/
+body {
+    font-family: Arial, Helvetica, Times New Roman;
+    background: #c7c8c9;
+    padding: 2em;
+    margin: 0;
+}
+
+/* General use classes */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*styles for sample main body section */
+.main {
+    font-size: 2em;
+    color: white;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    background-image: url(../img/flower.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+/* Code blocks for tutorials */
+pre {
+    background-color: #c7c8c9;
+    white-space: pre;
+    border: 1px solid black;
+    padding: 0.5em;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling for lesson wrapper */
+.lesson {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson p {
+    text-indent: 1em;
+}
+
+/*styles for nav*/
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*styles for nav pages*/
+.topnav a {
+    color: black;
+    padding: 17px 20px 16px 14px;
+    transition: 1s;
+}
+
+/*removes the whitespace-only text node  between the list of nav pages on header*/
+ul {
+    word-spacing: -6px;
+}
+
+
+li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*removes the underlines of links on header*/
+.head-a {
+    text-decoration: none;
+}
+
+/*sets logo to the left on header*/
+div#logo {
+    float: left;
+
+}
+
+/*home logo styles*/
+#logo img {
+    width: 50px;
+    vertical-align: top;
+
+}
+
+/*sets nav to the right on header*/
+div#navList {
+    float: right;
+}
+
+/*nav transition styles*/
+div#navList a:hover {
+    background-color: grey;
+    transition: 1s;
+}
+
+/*makes header sticky on this website*/
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/*footer and appendix sections*/
+main, 
+.footer,
+.appendix {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid black;
+    padding-left: 1em;
+}
+
+#dateStamp {
+    text-align: center;
+}
+
+/*media query for MOBILE view*/
+@media only screen and (max-width: 720px) {
+    body {
+        background-color: white;
+    }
+
+    /*    removes the border of nav section*/
+    .topnav {
+        border: none;
+    }
+
+    /*    styles for opened mobile menu*/
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    /*styles for nav pages on opened mobile menu*/
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 65px;
+        font-size: 2.5em;
+    }
+
+    /*    styles for individual nav pages*/
+    .overlay a {
+        padding: 15px;
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    /*    styles for transition of nav pages*/
+    .overlay a:hover,
+    .overlay a:focus {
+        color: red;
+    }
+
+    /*    styles for 'X'button and opened mobile menu*/
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+    }
+
+    /*    styles for 'X'button*/
+    .closebtn {
+        margin-top: 10px;
+        font-size: 8em;
+    }
+
+    /*styles for burger icon*/
+    #menuIcon {
+        transition: 0.5s;
+        color: black;
+        font-size: 2.5em;
+        cursor: pointer;
+        float: right;
+    }
+
+    /*    adds transition for burger icon*/
+    #menuIcon:hover {
+        transition: 0.5s;
+        color: red;
+    }
+
+    /*    prevents the desktop menu on this mobile view*/
+    #navList {
+        display: none;
+    }
+
+    /*    thickens the borders a bit more on body section, footer, and appendix sections */
+    .main {
+        border: 2px solid black;
+    }
+
+    main,
+    .footer,
+    .appendix {
+        border: 2px solid black;
+    }
+}
